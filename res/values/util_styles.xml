@@ -1,0 +1,100 @@
+<resources>
+
+	<style name="TranslucentNoActionBar" parent="@android:style/Theme.Translucent">
+		<item name="android:windowActionBar">false</item>
+		<item name="android:windowNoTitle">true</item>
+	</style>
+
+	<style name="NoActionBar" parent="@android:style/Theme.Holo.Light">
+		<item name="android:windowActionBar">false</item>
+		<item name="android:windowNoTitle">true</item>
+	</style>
+
+	<style name="IHAARTTheme" parent="@android:style/Theme.Holo.Light">
+		<item name="android:actionMenuTextColor">#ffb7b7b7</item>
+		<item name="android:actionMenuTextAppearance">@style/ActionBar.IHAART.MenuTextStyle</item>
+		<item name="android:actionBarStyle">@style/ActionBar.Solid.IHAART</item>
+		<!--<item name="android:background">@drawable/splash_ab_66_00</item>-->
+		<!--<item name="android:actionBarItemBackground">@drawable/selectable_background_ihaart</item>   THIS IS INVALID-->
+		<item name="android:popupMenuStyle">@style/PopupMenu.IHAART</item>
+		<item name="android:dropDownListViewStyle">@style/DropDownListView.IHAART</item>
+		<!--<item name="android:actionBarTabStyle">@style/ActionBarTabStyle.IHAART</item>-->
+		<item name="android:actionDropDownStyle">@style/DropDownNav.IHAART</item>
+		<item name="android:actionModeBackground">@drawable/cab_background_top_ihaart</item>
+		<!--<item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_ihaart</item>   THIS IS INVALID-->
+		<item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.IHAART</item>
+
+		<!-- Light.DarkActionBar specific -->
+		<!--<item name="android:actionBarWidgetTheme">@style/Theme.IHAART.Widget</item>   THIS IS INVALID-->
+	</style>
+
+	<!--sets the point size to the menu item(s) in the upper right of action bar-->
+	<style name="ActionBar.IHAART.MenuTextStyle" parent="@style/IHAARTTheme">
+		<item name="android:textSize">25sp</item>
+	</style>
+
+	<style name="ActionBar.Solid.IHAART" parent="@style/IHAARTTheme">
+		<item name="android:background">@drawable/ab_background_textured_ihaart</item>
+		<!--<item name="android:backgroundStacked">@drawable/ab_stacked_solid_ihaart</item>   THIS IS INVALID-->
+		<!--<item name="android:backgroundSplit">@drawable/ab_background_textured_ihaart</item>   THIS IS INVALID-->
+		<item name="android:progressBarStyle">@style/ProgressBar.IHAART</item>
+		<item name="android:icon">@drawable/ic_launcher</item>
+		<item name="android:displayOptions">useLogo</item>
+	</style>
+
+	<style name="ActionBar.Transparent.IHAART" parent="@android:style/Widget.Holo.ActionBar">
+		<item name="android:background">@drawable/ab_transparent_ihaart</item>
+		<item name="android:progressBarStyle">@style/ProgressBar.IHAART</item>
+	</style>
+
+	<style name="PopupMenu.IHAART" parent="@android:style/Widget.Holo.ListPopupWindow">
+		<item name="android:popupBackground">@drawable/menu_dropdown_panel_ihaart</item>
+	</style>
+
+	<style name="DropDownListView.IHAART" parent="@android:style/Widget.Holo.ListView.DropDown">
+		<item name="android:listSelector">@drawable/selectable_background_ihaart</item>
+	</style>
+
+	<!--<style name="ActionBarTabStyle.IHAART" parent="@android:style/Widget.Holo.ActionBar.TabView">   THIS IS INVALID-->
+		<!--<item name="android:background">@drawable/tab_indicator_ab_ihaart</item>   THIS IS INVALID-->
+	<!--</style>   THIS IS INVALID-->
+
+	<style name="DropDownNav.IHAART" parent="@android:style/Widget.Holo.Spinner">
+		<item name="android:background">@drawable/spinner_background_ab_ihaart</item>
+		<item name="android:popupBackground">@drawable/menu_dropdown_panel_ihaart</item>
+		<item name="android:dropDownSelector">@drawable/selectable_background_ihaart</item>
+	</style>
+
+	<style name="ProgressBar.IHAART" parent="@android:style/Widget.Holo.ProgressBar.Horizontal">
+		<item name="android:progressDrawable">@drawable/progress_horizontal_ihaart</item>
+	</style>
+
+	<style name="ActionButton.CloseMode.IHAART" parent="@android:style/Widget.Holo.ActionButton.CloseMode">
+		<item name="android:background">@drawable/btn_cab_done_ihaart</item>
+	</style>
+
+	<!-- this style is only referenced in a Light.DarkActionBar based theme -->
+	<style name="Theme.IHAART.Widget" parent="@android:style/Theme.Holo">
+		<item name="android:popupMenuStyle">@style/PopupMenu.IHAART</item>
+		<item name="android:dropDownListViewStyle">@style/DropDownListView.IHAART</item>
+	</style>
+
+
+	<style name="ButtonText">
+		<item name="android:textColor">#ffffff</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textSize">30dp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:shadowColor">#000000</item>
+		<item name="android:shadowDx">1</item>
+		<item name="android:shadowDy">1</item>
+		<item name="android:shadowRadius">2</item>
+	</style>
+
+	<style name="Divider">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">1dp</item>
+		<item name="android:background">?android:attr/listDivider</item>
+	</style>
+
+</resources>

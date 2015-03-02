@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:orientation="vertical"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent" android:background="@drawable/splash_ab_66_00">
+
+	<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:text="@string/enter_passcode"
+			android:id="@+id/passcodeInstructionTextView"
+			android:layout_marginTop="37dp" android:singleLine="true"
+			android:textIsSelectable="false"
+			android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+	<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/digit_1"
+			android:id="@+id/button1" android:layout_below="@+id/passcodeInstructionTextView"
+			android:layout_alignLeft="@+id/passcodeInstructionTextView"
+			android:layout_marginTop="85dp"
+			android:layout_marginLeft="55dp"
+			android:background="@drawable/bg_vgradient_blue" style="@style/ButtonText" android:layout_alignParentLeft="true"/>
+
+	<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/digit_2"
+			android:id="@+id/button2"
+			android:layout_alignTop="@+id/button1" android:layout_centerHorizontal="true"
+			android:background="@drawable/bg_vgradient_blue" style="@style/ButtonText"/>
+
+	<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/digit_3"
+			android:id="@+id/button3"
+			android:layout_alignTop="@+id/button2" android:layout_alignRight="@+id/passcodeInstructionTextView"
+			android:layout_marginRight="55dp"
+			android:background="@drawable/bg_vgradient_blue" style="@style/ButtonText"
+			android:layout_alignParentRight="true"/>
+
+	<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/digit_4"
+			android:id="@+id/button4" android:layout_below="@+id/button1"
+			android:layout_alignLeft="@+id/button1"
+			android:layout_marginTop="25dp"
+			android:background="@drawable/bg_vgradient_blue" style="@style/ButtonText"/>
+
+	<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/digit_5"
+			android:id="@+id/button5"
+			android:layout_alignTop="@+id/button4" android:layout_centerHorizontal="true"
+			android:background="@drawable/bg_vgradient_blue" style="@style/ButtonText"/>
+
+	<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/digit_6"
+			android:id="@+id/button6"
+			android:layout_alignTop="@+id/button5" android:layout_alignRight="@+id/button3"
+			android:background="@drawable/bg_vgradient_blue" style="@style/ButtonText"/>
+
+	<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/digit_7"
+			android:id="@+id/button7" android:layout_below="@+id/button4"
+			android:layout_alignLeft="@+id/button1"
+			android:layout_marginTop="25dp"
+			android:background="@drawable/bg_vgradient_blue" style="@style/ButtonText"/>
+
+	<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/digit_8"
+			android:id="@+id/button8"
+			android:layout_alignTop="@+id/button7" android:layout_centerHorizontal="true"
+			android:background="@drawable/bg_vgradient_blue" style="@style/ButtonText"/>
+
+	<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/digit_9"
+			android:id="@+id/button9"
+			android:layout_alignTop="@+id/button8" android:layout_alignRight="@+id/button3"
+			android:background="@drawable/bg_vgradient_blue" style="@style/ButtonText"/>
+
+	<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/digit_0"
+			android:id="@+id/button0"
+			android:layout_below="@+id/button8" android:layout_centerHorizontal="true"
+			android:layout_marginTop="25dp"
+			android:background="@drawable/bg_vgradient_blue" style="@style/ButtonText"/>
+	<ImageButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/deleteButton"
+			android:layout_alignTop="@+id/button0" android:layout_alignRight="@+id/button3"
+			android:layout_marginRight="7dp"
+			android:src="@drawable/ic_action_backspace"
+			android:background="@drawable/bg_vgradient_black" style="@style/ButtonText" android:layout_marginTop="5dp"/>
+	<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/imageView0" android:layout_below="@+id/passcodeInstructionTextView"
+			android:layout_marginLeft="45dp" android:layout_marginTop="20dp" android:layout_alignLeft="@+id/button1"
+			android:src="@drawable/dash_dark_60x60"/>
+	<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/imageView1" android:layout_below="@+id/passcodeInstructionTextView"
+			android:layout_alignTop="@+id/imageView0"
+			android:src="@drawable/dash_dark_60x60"
+			android:layout_toRightOf="@+id/button1" android:layout_marginLeft="25dp"/>
+	<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/imageView2" android:layout_below="@+id/passcodeInstructionTextView"
+			android:layout_alignTop="@+id/imageView0"
+			android:src="@drawable/dash_dark_60x60"
+			android:layout_toLeftOf="@+id/button3" android:layout_marginRight="25dp"/>
+	<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/imageView3" android:layout_below="@+id/passcodeInstructionTextView"
+			android:layout_marginRight="45dp" android:layout_alignTop="@+id/imageView0" android:layout_alignRight="@+id/button3"
+			android:src="@drawable/dash_dark_60x60"/>
+
+</RelativeLayout>

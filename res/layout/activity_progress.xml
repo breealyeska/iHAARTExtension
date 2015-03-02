@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2014 Bree Alyeska.
+  ~
+  ~ This file is part of Alarm Native Air Extension, developed in conjunction with and distributed with iHAART.
+  ~
+  ~ alarmANE and iHAART are free software: you can redistribute it and/or modify it under the terms of the
+  ~ GNU General Public License as published by the Free Software Foundation, either version 2 of the License, or
+  ~ (at your option) any later  version.
+  ~
+  ~ alarmANE and iHAART are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY;
+  ~ without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+  ~ Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License along with alarmANE and iHAART. If not, see
+  ~ <http://www.gnu.org/licenses/>.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:orientation="vertical"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent">
+
+	<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+		<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/show_button"
+				android:id="@+id/showButton" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
+				android:layout_marginTop="45dp"/>
+        <Button
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/done_button"
+              android:id="@+id/doneButton"
+              android:layout_below="@+id/showButton" android:layout_centerHorizontal="true"/>
+        <ProgressBar
+                style="@android:style/Widget.ProgressBar.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressCircle" android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" android:visibility="gone"/>
+    </RelativeLayout>
+</LinearLayout>

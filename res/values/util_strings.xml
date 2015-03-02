@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">CollaboRhythm</string>
+	<string name="show_button">Show</string>
+	<string name="done_button">Done</string>
+	<string name="enter_button">Enter</string>
+	<string name="submit_button">Submit</string>
+	<string name="save_button">Save</string>
+	<string name="cancel_button">Cancel</string>
+	<string name="take_now_button">Take Now</string>
+	<string name="change_details_button">Report Another Time</string>
+	<string name="clock_image_view_button">Image View</string>
+	<string name="clock_background_button">Clock Background</string>
+	<string name="time_indicator_size_button">Time Indicator Size</string>
+	<string name="time_indicator_inset_button">Time Indicator Inset</string>
+	<string name="med_placeholder_name">efavirenz 600 MG Oral Tablet [Sustiva]</string>
+	<string name="med_placeholder_instructions">Take with ritonavir and food</string>
+	<string name="med_placeholder_dose">1 Oral Tablet</string>
+	<string name="med_placeholder_time">Dose Due: 10 AM - 2 PM</string>
+
+
+	<string name="top">Top</string>
+	<string name="bottom">Bottom</string>
+	<string name="left">Left</string>
+	<string name="right">Right</string>
+
+	<string name="hello_world">Hello, World!</string>
+	<string name="digit_0">0</string>
+	<string name="digit_1">1</string>
+	<string name="digit_2">2</string>
+	<string name="digit_3">3</string>
+	<string name="digit_4">4</string>
+	<string name="digit_5">5</string>
+	<string name="digit_6">6</string>
+	<string name="digit_7">7</string>
+	<string name="digit_8">8</string>
+	<string name="digit_9">9</string>
+	<string name="dash">-</string>
+	<string name="dot">dot</string>
+	<string name="delete">delete</string>
+	<string name="start">start</string>
+	<string name="stop">stop</string>
+	<string name="quit">Quit</string>
+	<string name="enter_passcode">Please enter your passcode</string>
+	<string name="change_passcode">Please enter your old passcode</string>
+	<string name="set_passcode">Please set a 4 digit passcode</string>
+	<string name="confirm_passcode">Re-enter passcode to confirm</string>
+	<string name="menu_passcode_change">Change Passcode</string>
+	<string name="menu_passcode_logout">Logout</string>
+	<string name="menu_passcode_login">Login</string>
+	<string name="about">Made by Bree Alyeska</string>
+</resources>

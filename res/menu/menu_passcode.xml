@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/menu_about_id"
+		  android:title="About"
+		  android:icon="@drawable/ic_action_about"
+		  android:showAsAction="always"/>
+	<item android:id="@+id/menu_clock_id"
+		  android:title="Show Clock"
+		  android:icon="@drawable/ic_action_settings"
+		  android:showAsAction="always"/>
+
+	<item
+			android:id="@+id/menu_passcode_accounts_id"
+			android:title="Account"
+			android:icon="@drawable/ic_action_accounts"
+			android:showAsAction="always">
+		<menu>
+			<group android:id="@+id/menu_group_passcode_id" android:enabled="true" android:visible="true">
+				<item android:id="@+id/menu_login_id"
+					  android:title="@string/menu_passcode_login"
+					  android:showAsAction="never"/>
+				<item android:id="@+id/menu_logout_id"
+					  android:title="@string/menu_passcode_logout"
+					  android:showAsAction="never"/>
+				<item android:id="@+id/menu_change_passcode_id"
+					  android:title="@string/menu_passcode_change"
+					  android:showAsAction="never"/>
+			</group>
+		</menu>
+	</item>
+</menu>

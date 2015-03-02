@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alyeska.shared.ane.iHAART.freInterface.MedPopoverFrameView xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:id="@+id/popover_layout"
+			  android:orientation="horizontal"
+			  android:layout_width="fill_parent"
+			  android:layout_height="fill_parent"
+			  android:padding="8dp"
+			  android:background="#DAAA">
+
+	<TextView android:id="@+id/popover_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content"
+			  android:background="@drawable/bg_vgradient_white" android:padding="20dp" android:textColor="#ff000000"
+			  android:textSize="20sp" android:textStyle="bold"/>
+
+</com.alyeska.shared.ane.iHAART.freInterface.MedPopoverFrameView>

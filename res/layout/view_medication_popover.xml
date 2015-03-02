@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alyeska.shared.ane.iHAART.freInterface.MedPopoverFrameView
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools" android:id="@+id/med_popover_layout"
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="@color/grey_alpha50">
+	<RelativeLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/mp_relative_layout">
+		<!--<ImageButton-->
+				<!--android:layout_width="35dp"-->
+				<!--android:layout_height="35dp"-->
+				<!--android:id="@+id/ib_med_popover_close" android:src="@drawable/ic_action_cancel_red"-->
+				<!--android:layout_alignParentRight="true"/>-->
+		<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+					  android:background="@drawable/bg_vgradient_white"
+					  android:orientation="vertical"
+					  android:id="@+id/mp_linear_layout" android:divider="@android:drawable/divider_horizontal_dark"
+					  android:dividerPadding="30dp" android:focusable="false" android:showDividers="middle"
+					  android:gravity="center"> <!-- android:layout_below="@+id/ib_med_popover_close" android:layout_alignRight="@+id/ib_med_popover_close" -->
+			<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:layout_gravity="center_vertical"
+					android:gravity="center_vertical" android:paddingBottom="5dp">
+				<TextView android:id="@+id/med_popover_tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content"
+					  android:textColor="#ff000000"
+					  android:textSize="22sp" android:textStyle="bold" android:text="@string/med_placeholder_name"/>
+				<TextView android:id="@+id/med_popover_tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content"
+						  android:textColor="#ff000000"
+						  android:textSize="18sp" android:textStyle="bold" android:text="@string/med_placeholder_time"
+						  android:paddingLeft="20dp"/>
+				<TextView android:id="@+id/med_popover_tv_dose" android:layout_width="wrap_content" android:layout_height="wrap_content"
+						  android:textColor="#ff000000"
+						  android:textSize="16sp" android:text="@string/med_placeholder_dose"
+						  android:paddingLeft="20dp"/>
+				<TextView android:id="@+id/med_popover_tv_instructions" android:layout_width="wrap_content" android:layout_height="wrap_content"
+						   android:textColor="#ff000000"
+						  android:textSize="16sp" android:text="@string/med_placeholder_instructions"
+						   android:paddingLeft="20dp"/>
+			</LinearLayout>
+			<ImageView
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal"
+					android:minHeight="1dp" android:background="@drawable/bg_rgradient_black"/>
+			<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+					android:gravity="center" android:paddingTop="5dp" android:paddingBottom="5dp">
+				<RadioGroup
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:orientation="horizontal"
+						android:id="@+id/med_popover_rg">
+					<RadioButton
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/take_now_button"
+							android:id="@+id/med_popover_rb_now" android:checked="true" android:textColor="@color/black"
+							android:clickable="true" android:enabled="true"/>
+					<RadioButton
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/change_details_button"
+							android:id="@+id/med_popover_rb_later" android:textColor="@color/black"
+							android:clickable="true" android:enabled="true"/>
+				</RadioGroup>
+			</LinearLayout>
+			<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/time_picker_layout"
+					android:visibility="gone">
+				<ImageView
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal"
+					android:minHeight="1dp" android:background="@drawable/bg_rgradient_black"/>
+
+				<!--<TimePicker-->
+						<!--android:layout_width="wrap_content"-->
+						<!--android:layout_height="wrap_content"-->
+						<!--android:id="@+id/doseTimePicker"-->
+						<!--android:clickable="true"-->
+						<!--android:scaleX="0.75" android:scaleY="0.75" android:background="@drawable/bg_vgradient_blue"/>-->
+				<TimePicker
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:id="@+id/med_popover_time_picker"
+						android:clickable="true"/>
+				<!--
+						android:scaleX="0.15" android:scaleY="0.15"
+						 android:timePickerMode="clock" -->
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+				android:gravity="center" android:paddingTop="5dp" android:paddingBottom="5dp">
+				<ImageView
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_horizontal"
+						android:minHeight="1dp" android:background="@drawable/bg_rgradient_black"/>
+				<LinearLayout
+						android:orientation="horizontal"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+						android:gravity="center" android:paddingTop="5dp" android:paddingBottom="5dp">
+					<Button
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/save_button"
+							android:id="@+id/med_popover_button_save"/>
+					<Button
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/cancel_button"
+							android:id="@+id/med_popover_button_cancel"/>
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</RelativeLayout>
+</com.alyeska.shared.ane.iHAART.freInterface.MedPopoverFrameView>

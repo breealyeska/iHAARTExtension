@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="grey_alpha60">#88676767</color>
+	<color name="grey_alpha40">#64b0b0b0</color>
+	<color name="grey_alpha50">#7f000000</color>
+	<color name="medium_grey">#676767</color>
+	<color name="light_grey">#b0b0b0</color>
+	<color name="ihaart_red">#b71010</color>
+	<color name="white">#ffffff</color>
+	<color name="black">#000000</color>
+	<color name="purple">#280850</color>
+	<color name="dark_blue">#182843</color>
+</resources>
